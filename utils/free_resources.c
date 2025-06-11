@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "../push_swap.h"
 
 void	free_resources(char **numbers, long long *numbers_list, t_node **stack)

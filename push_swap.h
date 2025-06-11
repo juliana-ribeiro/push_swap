@@ -6,14 +6,14 @@
 /*   By: juribeir <juribeir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 16:30:44 by juribeir          #+#    #+#             */
-/*   Updated: 2025/06/11 10:44:53 by juribeir         ###   ########.fr       */
+/*   Updated: 2025/06/11 11:52:16 by juribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "/libft/libft.h"
+# include "libft/libft.h"
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>

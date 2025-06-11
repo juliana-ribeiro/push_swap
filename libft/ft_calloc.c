@@ -6,7 +6,7 @@
 /*   By: juribeir <juribeir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 03:47:11 by juribeir          #+#    #+#             */
-/*   Updated: 2024/10/25 13:57:35 by juribeir         ###   ########.fr       */
+/*   Updated: 2025/06/11 11:54:22 by juribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,4 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	ft_bzero(ptr, total_size);
 	return ((void *)ptr);
-}
-
-
-int main(void)
-{
-	#include <stdio.h>
-	printf("%p", ft_calloc(0, 0));
-	return (0);
 }

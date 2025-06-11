@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: juribeir <juribeir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/11 10:22:47 by juribeir          #+#    #+#             */
-/*   Updated: 2025/06/11 10:22:54 by juribeir         ###   ########.fr       */
+/*   Created: 2024/06/11 10:30:00 by juribeir          #+#    #+#             */
+/*   Updated: 2025/06/11 11:54:10 by juribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,25 @@
 
 long long	ft_atol(const char *nptr)
 {
-	long long	res;
+	long long	result;
 	int			sign;
+	int			i;
 
-	res = 0;
+	result = 0;
 	sign = 1;
-	while ((*nptr == 32) || (*nptr >= 9 && *nptr <= 13))
-		nptr++;
-	if (*nptr == '-' || *nptr == '+')
+	i = 0;
+	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
+		i++;
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if (*nptr == '-')
+		if (nptr[i] == '-')
 			sign = -1;
-		nptr++;
+		i++;
 	}
-	while (*nptr >= '0' && *nptr <= '9')
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		res *= 10;
-		res += *nptr++ - '0';
+		result = result * 10 + (nptr[i] - '0');
+		i++;
 	}
-	return ((long long)(res * sign));
+	return (result * sign);
 }

@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "../push_swap.h"
 
 static int	*copy_stack_to_array(t_node *stack, int size)
